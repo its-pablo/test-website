@@ -8,7 +8,8 @@ function overlayOff() {
   document.getElementById("overlay").style.display = "none";
 }
 
-template.innerHTML = `<nav class="navbar navbar-inverse">
+const template = document.createElement('header');
+header.innerHTML = `<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Biscourse</a>
@@ -26,4 +27,4 @@ template.innerHTML = `<nav class="navbar navbar-inverse">
 </nav>
 `
 
-document.body.appendChild(template.content);
+document.body.appendChild(header.content);
