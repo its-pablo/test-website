@@ -19,15 +19,24 @@
     <link rel="stylesheet" href="/style.css" />
     <script src="/script.js" defer></script>
     <script>
-            document.getElementById("pagenotfound").innerHTML =
+            document.getElementById("pagenotfoundtext").innerHTML =
             "Sorry, we couldn't retrieve any data for " + window.location.pathname;
     </script>
     <style>
       .pagenotfound {
         text-align: center;
+      }
+      .pagenotfound:hover {
+        text-align: center;
+        color: blue;
+      }
+      .pagenotfoundtext {
+        font-size: 20px
+      }
     </style
   </head>
   <body>
-    <h1 class="pagenotfound">Hi</p>
+    <h1 class="pagenotfound">Uh Oh...</h1>
+    <p class="pagenotfoundtext">Javascript goes here</p>
   </body>
 </html>
