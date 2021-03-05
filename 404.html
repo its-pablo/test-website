@@ -37,12 +37,11 @@
   <body>
 
     <h1 class="pagenotfound">Uh Oh...</h1>
-    <p class="pagenotfoundtext" id="errorpagenotfoundtext"></p>
-    <p class="pagenotfoundtext" id="demo"></p>
+    <p class="pagenotfoundtext" id="errortext"></p>
 
 <script>
-document.getElementById("demo").innerHTML =
-"Page path is: " + window.location.pathname;
+document.getElementById("errortext").innerHTML =
+"Nothing was retrieved at " + window.location.pathname; + "we're very sorry about that."
 </script>
 
   </body>
