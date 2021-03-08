@@ -32,8 +32,8 @@ document.body.appendChild(header.content);
 document.getElementById("globalHeader").innerHTML = `<div class="header">
   <a href="#default" class="logo">CompanyLogo</a>
   <div class="header-right">
-    <a class="active" href="#home">Home</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a id="homelink" class="active" href="#home">Home</a>
+    <a id="contactlink" href="#contact">Contact</a>
+    <a id="aboutlink" href="#about">About</a>
   </div>
 </div>`
