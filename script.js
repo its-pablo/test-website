@@ -37,3 +37,12 @@ document.getElementById("globalHeader").innerHTML = `<div class="header">
     <a id="aboutlink" href="#about">About</a>
   </div>
 </div>`
+
+
+var biscourseWin;
+
+function openBiscourse() {
+  biscourseWin=window.open("https://biscourse.glideapp.io", "myWindow", "width=200, height=100");
+  biscourseWin.moveTo(500, 100);
+  biscourseWin.focus();
+}
