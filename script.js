@@ -1,4 +1,4 @@
-console.log("This website is being developed.");
+console.log("This website is being developed, email me if you're experiencing any bugs :)");
 
 function overlayOn() {
   document.getElementById("overlay").style.display = "block";
