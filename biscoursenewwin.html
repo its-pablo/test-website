@@ -3,7 +3,7 @@
 	
 <head>
 	<title>
-		Non-centerd popup window
+		Centerd popup window
 		on the screen
 	</title>
 </head>
@@ -12,15 +12,16 @@
 	<h1>GeeksforGeeks</h1>
 	
 	<p>
-		Non-centerd popup window
+		Centerd popup window
 		on the screen
 	</p>
 	
 	<script>
 		function createPopupWin(pageURL, pageTitle,
 					popupWinWidth, popupWinHeight) {
-			var left = (screen.width ) ;
-			var top = (screen.height ) ;
+			var left = (screen.width - popupWinWidth) / 2;
+			var top = (screen.height - popupWinHeight) / 4;
+			
 			var myWindow = window.open(pageURL, pageTitle,
 					'resizable=yes, width=' + popupWinWidth
 					+ ', height=' + popupWinHeight + ', top='
@@ -33,5 +34,8 @@
 		GeeksforGeeks
 	</button>
 </body>
+
+</html>
+
 
 </html>
